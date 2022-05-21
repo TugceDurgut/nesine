@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import { BulletinProvider } from '../Context'
+// import '../styles/globals.css'
+import Bullitens from './bullitens'
+// import example from './example.scss'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+function MyApp() {
+
+  return (
+    <BulletinProvider>
+      <Bullitens />
+    </BulletinProvider>
+
+  )
 }
-
 export default MyApp
